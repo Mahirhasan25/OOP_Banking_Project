@@ -15,20 +15,6 @@ def main():
     
     user1.login_account(bank)
 
-    # user1.diposite(50000, bank)
-
-    # user1.Withdrawal(2000, bank)
-    # manager1 = Manager('Shakil')
-    # # manager2 = Manager('pasha')
-    # manager1.create_account(bank)
-    # # manager1.check_avaiable_balance_of_bank(bank)
-    # # manager1.check_loan_of_bank(bank)
-    # manager1.login_account(bank)
-    # manager2.create_account(bank)
-    # print(bank.is_loan)
-    # manager1.loan_feature(bank, False)
-    # print(bank.is_loan)
-
 
 
 
