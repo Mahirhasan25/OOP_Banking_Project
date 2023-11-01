@@ -4,20 +4,22 @@ from client import User
 from manager import Manager
 
 def main():
+    
     bank = Bank('sonali bank', 100000)
     user1 = User('Abir', 977655)
-    user1.create_account(bank)
-    # user2 = User('sakib', 1298)
-    # user2.create_account(bank)
+    manager1 = Manager('Rajim')
 
-    # user1.diposite(7000, bank)
-    # user1.send_money(2000, 102, bank)
-    
-    user1.login_account(bank)
-    
-
-    #fist comment
-
+    print('Press 1 For User Account')
+    print('Press 2 For Manager Account')
+    press = int(input('>> '))
+    if press == 1:
+        user1.create_account(bank)
+        user1.login_account(bank)
+    elif press == 2:
+        manager1.create_account(bank)
+        manager1.login_account(bank)
+    else:
+        print('Keword Unvalid.Please Try again..')
 
 
 

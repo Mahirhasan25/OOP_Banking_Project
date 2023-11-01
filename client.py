@@ -11,8 +11,8 @@ class User:
         self.user_history = []
 
     def create_account(self, bank):
-        print('\n<< Create User Account >>')
-        email = input('\nEnter your email: ')
+        print('\n-- Create User Account --')
+        email = input('Enter your email: ')
         password = input('Enter your password: ')
         flag = bank.add_user(self, email, password)
         if flag == 1:
@@ -21,8 +21,8 @@ class User:
             print('\nThis Email Is Already Exist.Please Try Another')
     
     def login_account(self, bank):
-        print('\n<< Login User Info >>')
-        email = input('\nEnter your email: ')
+        print('\n-- Login User Info --')
+        email = input('Enter your email: ')
         password = input('Enter your password: ')
         flag = bank.user_login(email, password)
         if flag == 0:

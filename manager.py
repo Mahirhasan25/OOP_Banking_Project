@@ -16,8 +16,8 @@ class Manager:
         self.password = None
 
     def create_account(self, bank):
-        print('\n<< Create Manager Account >>')
-        email = input('\nEnter your email: ')
+        print('\n-- Create Manager Account --')
+        email = input('Enter your email: ')
         password = input('Enter your password: ')
         flag = bank.add_manager(self, email, password)
         if flag == 1:
@@ -26,8 +26,8 @@ class Manager:
             print('\nManager Account Exist.Please login..')
     
     def login_account(self, bank):
-        print('\n<< Login Manager Info >>')
-        email = input('\nEnter your email: ')
+        print('\n-- Login Manager Info --')
+        email = input('Enter your email: ')
         password = input('Enter your password: ')
         flag = bank.manager_login(email, password)
         if flag == 0:
